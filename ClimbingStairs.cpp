@@ -1,16 +1,15 @@
 #include<iostream>
 #include<string>
-
-
+ 
+/*------Determine the number of ways to climb to the top given that you can climb only 1 or 2 steps at a time*/
 class Solution{
 	public:
-
 		bool check(int i){
 			for(int j= 1 ; j < sizeof(a) / sizeof(int); j++){
 				if(i == a[j])
 					return true;
 			}
-			return false;
+			return false; 
 		}
 
 		int result(int i){ 
@@ -24,7 +23,6 @@ class Solution{
 		}
 
 		int climbStairs(int n) {
-		 // std::cout << sizeof(a) / sizeof(int) << std::endl;
 		  b = new int[n+1];
           for(int i = 1; i <= n ; ++i){
           	 if(check(i)){
